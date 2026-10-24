@@ -1,0 +1,19 @@
+[project]
+name = "rate-limter"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "LekhanJ", email = "jomiwalelekhan@gmail.com" }
+]
+requires-python = ">=3.13"
+dependencies = [
+    "fastapi>=0.162.0",
+]
+
+[project.scripts]
+rate-limter = "rate_limter:main"
+
+[build-system]
+requires = ["uv_build>=0.12.17,<0.13.0"]
+build-backend = "uv_build"
